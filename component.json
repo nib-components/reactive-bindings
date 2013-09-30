@@ -6,7 +6,7 @@
   "keywords": [],
   "dependencies": {
     "component/reactive": "0.13.2",
-    "component/type": "*",
+    "component/value": "*",
     "component/event": "*"
   },
   "development": {},
