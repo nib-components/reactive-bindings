@@ -1,4 +1,3 @@
-var reactive = require('reactive');
 var events = require('event');
 var value = require('value');
 
