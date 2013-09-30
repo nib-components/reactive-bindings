@@ -5,7 +5,7 @@
   "version": "0.0.1",
   "keywords": [],
   "dependencies": {
-    "component/reactive": "0.13.2"
+    "component/reactive": "0.13.2",
     "component/type": "*",
     "component/event": "*"
   },
