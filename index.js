@@ -10,7 +10,7 @@ var value = require('value');
  */
 
 
-function dataModel(el, property){   //el, attr
+function dataModel(el, property){
   var binding = this;
   var reactive = binding.reactive;
   var type = el.getAttribute('type');
@@ -54,7 +54,7 @@ function dataModel(el, property){   //el, attr
  */
 
 
-function optionText(el, property){
+function dataOptionText(el, property){
   var binding = this;
   binding.change(function() {
     var options = binding.value(property);
@@ -72,7 +72,7 @@ function optionText(el, property){
 
 module.exports = {
   bindings: {
-    'data-option-text': optionText,
+    'data-option-text': dataOptionText,
     'data-model': dataModel
   }
 };
