@@ -2,7 +2,7 @@
   "name": "reactive-bindings",
   "repo": "nib-components/reactive-bindings",
   "description": "Custom reactive bindings",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "keywords": [],
   "dependencies": {
     "component/value": "*",
