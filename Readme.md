@@ -2,7 +2,7 @@
 
   Custom reactive bindings
   
-  **Note**: Version 1.0.0 of reactive-bindings is to be used with **component/reactive 1.0.x**
+  **Note**: Version 1.0.0 of reactive-bindings is to be used with [component/reactive 1.1.x](https://github.com/component/reactive/tree/1.1.0).
 
 ## Installation
 
