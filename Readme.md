@@ -19,56 +19,57 @@ Bind an attribute to an input, select or textarea field.
 When the field updates, it updates the model. 
 When the model updates, the field state updates.
 
-The Template
+```js
+var reactive = require('reactive');
+var bindings = require('reactive-bindings');
 
-	<form class="js-skater">
-	  <input type="text" name="name" data-model="name">
-	  <input type="text" name="trick" data-model="trick">
-	  <label>
-	    <input name="isGnarly" type="radio" value="yes" data-model="isGnarly">Yes
-	  </label>
-	  <label>
-	    <input name="isGnarly" type="radio" value="no" data-model="isGnarly">No
-	  </label>
-	</form>
+var tmp = document.querySelector('.js-skater');
+var model = {
+  "name": "Tony Hawk";
+  "trick" "900",
+  "isGnarly": "yes"
+}
 
-Script
+reactive(model, tmp, bindings);
+```
 
-	var reactive = require('reactive');
-	var bindings = require('reactive-bindings');
-	
-	var tmp = document.querySelector('.js-skater');
-	var model = {
-	  "name": "Tony Hawk";
-	  "trick" "900",
-	  "isGnarly": "yes"
-	}
-	
-	reactive(model, tmp, bindings);
+```html
+<form class="js-skater">
+  <input type="text" name="name" data-model="name">
+  <input type="text" name="trick" data-model="trick">
+  <label>
+    <input name="isGnarly" type="radio" value="yes" data-model="isGnarly">Yes
+  </label>
+  <label>
+    <input name="isGnarly" type="radio" value="no" data-model="isGnarly">No
+  </label>
+</form>
+```
 
 ###data-option-text
 
 Create and set the text/value for a set of options in a select menu.
 The property value should be an array of strings that will be used to create and populate the options in a select field.
 
-The Template
 
-	<div class="js-sponsors">
-	  {name} sponsors included <select data-option-text="sponsors"></select>
-	</div>
+```js
+var reactive = require('reactive');
+var bindings = require('reactive-bindings');
 
-Script
+var tmp = document.querySelector('.js-sponsors');
+var model = {
+  "name": "Tony Hawk";
+  "sponsors": ["Powell Peralta", "Independent", "Birdhouse Projects"]
+}
 
-	var reactive = require('reactive');
-	var bindings = require('reactive-bindings');
-	
-	var tmp = document.querySelector('.js-sponsors');
-	var model = {
-	  "name": "Tony Hawk";
-	  "sponsors": ["Powell Peralta", "Independent", "Birdhouse Projects"]
-	}
-	
-	reactive(model, tmp, bindings);
+reactive(model, tmp, bindings);
+```
+
+```html
+<div class="js-sponsors">
+  {name} sponsors included <select data-option-text="sponsors"></select>
+</div>
+```
 
 ## License
 
