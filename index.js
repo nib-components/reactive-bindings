@@ -47,7 +47,7 @@ function dataModel(el, property){
 
 
 /**
- * Set the text/value for a set of options in a select menu.
+ * Create and set the text/value for a set of options in a select menu.
  * The property value should be an array of strings that will
  * be used to create and populate the options in a select
  * <select data-option-text="{name}"></select>
