@@ -1,4 +1,3 @@
-
 # reactive-bindings
 
   Custom reactive bindings
@@ -42,10 +41,10 @@ reactive(model, tmp, bindings);
   <input type="text" name="name" data-model="name">
   <input type="text" name="trick" data-model="trick">
   <label>
-    <input name="isGnarly" type="radio" value="yes" data-model="isGnarly">Yes
+    <input type="radio" value="yes" name="isGnarly" data-model="isGnarly">Yes
   </label>
   <label>
-    <input name="isGnarly" type="radio" value="no" data-model="isGnarly">No
+    <input type="radio" value="no" name="isGnarly" data-model="isGnarly">No
   </label>
 </form>
 ```
