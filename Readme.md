@@ -20,6 +20,8 @@ When the field updates, it updates the model.
 When the model updates, the field state updates.
 
 ```js
+// script.js
+ 
 var reactive = require('reactive');
 var bindings = require('reactive-bindings');
 
@@ -34,6 +36,8 @@ reactive(model, tmp, bindings);
 ```
 
 ```html
+<!-- template.html -->
+
 <form class="js-skater">
   <input type="text" name="name" data-model="name">
   <input type="text" name="trick" data-model="trick">
@@ -53,6 +57,8 @@ The property value should be an array of strings that will be used to create and
 
 
 ```js
+// script.js
+ 
 var reactive = require('reactive');
 var bindings = require('reactive-bindings');
 
@@ -66,6 +72,8 @@ reactive(model, tmp, bindings);
 ```
 
 ```html
+<!-- template.html -->
+
 <div class="js-sponsors">
   {name} sponsors included <select data-option-text="sponsors"></select>
 </div>
